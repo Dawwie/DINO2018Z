@@ -11,7 +11,7 @@
 <ul>
 <li>git config --global user.name ""
 <ul>
-<li>Ustawia globalną nazwę użytkownika. </li>
+<li>Ustawia nazwę użytkownika, a poprzez zastosowanie funkcji "--global" wystarczy, że taka konfiguracja zostanie dokonana jednorazowo i system automatycznie będzie korzystał z tej nazwy użytkownika. </li>
 </ul></li>
 <li>git reset HEAD
 <ul>
@@ -22,9 +22,17 @@
 <ul>
 <li>Kasuje zmiany zarejestrowane (za pomocą git add) ale nie zakomitowane (git commit) lecz nie zmienia plików (wersja z --hard również usuwa zmiany z plików).</li>
 </ul></li>
-<li>gitk -all</li>
+<li>gitk -all
+<ul> 
+<li>Wyświetla zmiany w repozytorium lub wybranym zestawie zatwierdzeń. Funkcja "-all" pokazuje wszystkie informacje tj. gałęzie, tagi itp.).</li>
+</ul> 
+</li>
 <li>git branch --merged</li>
-<li>git branch "branch" "commit hash" </li>
+<li>git branch "branch" "commit hash"
+<ul> 
+<li>Odnajduje w podanej gałęzi commita o podanym kluczu hash.</li>
+</ul> 
+</li>
 <li>git pull "remote" "branch"</li>
 <ul><li>Pobiera zmiany z podanej gałęzi na  podanym zdalnym repozytorium.Przydatne gdy chcemy pobrać aktualne zmiany z zdalnej gałęzi. </li></ul>
 <li>git config --global user.email ""
